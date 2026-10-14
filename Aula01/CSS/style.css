@@ -1,0 +1,31 @@
+body{   
+/* 
+    Temos aqui:
+        Seletor -- selecionado o body
+        Declaração -- o bloco de código com {}
+        propriedades e valores
+*/
+    background-color: powderblue;
+}
+
+/* Chamando seletor de elemento dentro de classe */
+p.ex1{
+    text-align: center;
+    font-weight: bold;
+    color: purple;
+}
+
+
+/* Utilizando seletor universal */
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Agrupando seletores */
+/* Fazemos isso ao invés de colocar em blocos diferentes elementos que possuirão o mesmo estilo */
+.ex2-h2, .ex2-p{
+
+    color: palevioletred;
+    font-weight: bold;
+
+}
