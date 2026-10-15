@@ -1,0 +1,24 @@
+body{
+
+    font-family: sans-serif;
+    background-image: url("../IMGs/phone.png");
+    background-repeat: no-repeat;
+
+    /* 
+        Faz com que o imagem fique fixa na tela.
+        o scrool faz com que ela sofra o scrool
+    */
+    background-attachment: fixed;
+    /* background-size: cover; */
+}
+
+
+/* Definindo com propriedade abreviada*/
+
+p.ex2{
+
+    background: #5b745b url("../IMGs/grass-img.png") no-repeat center;
+    
+    color: #f8f8ff;
+
+}
