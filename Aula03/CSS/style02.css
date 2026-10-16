@@ -1,0 +1,45 @@
+body{
+    font-family: sans-serif;
+    background-color: blanchedalmond;
+}
+
+/* Margens com propriedades especificas */
+p.ex1{
+
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+/* Margens com shorthand */
+p.ex1-1, p.ex2, p.ex3, p.ex4{
+    border: 2px solid black;
+}
+
+p.ex1-1{
+
+    margin: 50px 100px;
+}
+
+p.ex2{
+
+    margin: 50px 150px 100px ;
+}
+
+p.ex3{
+
+    margin: 10px 40px 100px 150px;
+}
+
+
+/* Definindo o valor auto em Margin */
+
+div.ex3{
+
+    border: 2px solid darkred;
+    width: 250px;
+    margin: auto;
+    
+}

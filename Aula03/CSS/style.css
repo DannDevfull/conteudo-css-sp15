@@ -1,0 +1,170 @@
+body{
+
+    font-family: monospace;
+}
+
+p.dotted{
+
+    border-style:dotted;
+}
+
+p.dashed{
+
+    border-style: dashed;
+}
+
+p.solid{
+
+    border-style: solid ;
+}
+
+p.double{
+    border-style: double;
+}
+
+p.groove{
+
+    border-style: groove;
+}
+
+p.ridge{
+
+    border-style: ridge;
+}
+
+p.inset{
+
+    border-style: inset;
+}
+
+p.outset{
+
+    border-style: outset;
+}
+
+p.none{
+
+    border-style: none;
+}
+
+p.hidden{
+
+    border-style: hidden;
+}
+
+/* Definindo espessura nas bordas  */
+
+p.p-5px{
+    border-style: solid;
+    border-width: 5px;
+}
+
+p.p-thin{
+    border-style: solid;
+    border-width: thin;
+}
+
+p.p-medium{
+    border-style: solid;
+    border-width: medium;
+}
+
+p.p-thick{
+    border-style: solid;
+    border-width: thick;
+}
+
+/* Definindo espessuras para bordas específicas */
+
+p.p-1valor{
+    
+    border-style: solid;
+    border-width: 6px;
+    /* Aplica a borda para todos os lados */
+
+}
+
+p.p-2valores{
+    
+    border-style: solid;
+    border-width: 20px 4px;
+    /* Em cima e dos lados */
+}
+p.p-3valores{
+
+    border-style: solid;
+    border-width: 4px 20px 10px;
+    /* Em cima, dos lados e embaixo */
+}
+
+p.p-4valores{
+
+    border-style: solid;
+    border-width: 40px 30px 20px 10px;
+
+    /* sentido horário */
+}
+
+
+/* Definindo cores em bordas */
+
+p.borda-cor1{
+
+    border-style: solid;
+    border-color: blueviolet;
+
+}
+
+p.borda-cor2{
+    border-style: dotted;
+    border-color: #9d459d;
+}
+
+p.borda-cor3{
+    border-style: double;
+    border-color: rgb(156,89,24);
+}
+
+p.borda-cor4{
+    border-style: dashed;
+    border-color: hsl(9, 100%, 64%);
+}
+
+p.borda-cor5{
+    border-style: solid;
+    border-color: tomato navy darkgreen orangered;
+    /* Sentido horário: cima, direita, baixo e esquerda */
+}
+
+
+
+/* Definindo estilos para bordas individuais */
+
+p.bordas-individuais1{
+    border-top-style: solid;
+    border-right-style: ridge;
+    border-bottom-style: dotted;
+    border-left-style: dashed;
+    
+}
+
+p.bordas-individuais2{
+    border-style: dashed solid dotted ridge ;
+}
+
+/* Definindo bordas com shorthand */
+p.borda-abbr1{
+    border: 2px solid red;
+}
+
+p.borda-abbr2{
+    border-top: 4px solid maroon;
+}
+
+/* Usando borda arredondada */
+
+p.borda-arredondada{
+    /* border-style: solid; */
+    border: 2px solid purple;
+    border-radius: 6px;
+}
