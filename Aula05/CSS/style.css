@@ -1,0 +1,106 @@
+body{
+    background-color: rebeccapurple;
+    color: ghostwhite;
+    font-family: sans-serif;
+}
+
+.center div,
+.flex-start div,
+.flex-end div,
+.space-beetween div,
+.space-around div,
+.space-evenly div {
+    color: darkmagenta;
+    background-color: ghostwhite;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: .5rem;
+    text-align: center;
+    /* Vai joga-lo ao centro */
+    align-content:center;
+    /* vai alinhar o item ao centro em relação ao eixo Y */
+    font-weight: bold;
+    /* box-shadow: 0 10px 10px 0px black; */
+    /* Vertical, horixontal, blur (espalhamento da sombra) */
+}
+
+/* Utilizando a propriedades justify-content */
+
+.center{
+    background-color: darkmagenta;
+    border: 8px solid ghostwhite;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    /* Ele alinha os itens flexíveis ao centro no eixo X */
+}
+
+
+.flex-start{
+
+    background-color: darkmagenta;
+    border: 8px solid ghostwhite;
+    padding: 10px;
+    display: flex;
+    gap:20px;
+    border-radius: 8px;
+    justify-content: flex-start;
+    /* Ele é uma valor padrão; 
+        ele vai alinhar os itens flexíveis no inicio de nosso conteiner */
+}
+
+.flex-end{
+    background-color: darkmagenta;
+    border: 8px solid ghostwhite;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    border-radius: 8px;
+    justify-content: flex-end;
+    /* Vai jogar os iten flexíveis no final da caixa */
+}   
+
+.space-beetween{
+    background-color: darkmagenta;
+    border: 8px solid ghostwhite;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border-radius: 8px;
+    
+}
+
+.space-around{
+    background-color: darkmagenta;
+    border: 8px solid ghostwhite;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    border-radius: 8px;
+    /* Faz um espaçamento antes, entre e depois dos itens flexíveis */
+    align-items: center;
+}
+
+.space-evenly{
+    background-color: darkmagenta;
+    border: 8px solid ghostwhite;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    /* Faz com que o espaçamento antes, entre e depois seja exatamente o mesmo */
+}
+
+
+
+@media screen and (max-width:600px){
+    .space-around{
+        flex-direction: column;
+        
+    }
+}
