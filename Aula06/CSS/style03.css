@@ -1,0 +1,122 @@
+body{
+    background-color: darkslategray;
+    color: lightslategrey;
+    font-family: monospace;
+}
+
+
+.container{
+
+    background-color: aliceblue;
+    border: 8px solid darkslateblue;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4px;
+}
+
+.container div{
+
+    background-color: lightslategrey;
+    color: darkslateblue;
+    border: 4px solid navy;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+/* Formatação de estilos */
+.ex1,
+.ex2,
+.ex3,
+.ex4,
+.ex5,
+.ex6,
+.ex7,
+.ex8{
+    
+    background-color: aliceblue;
+    border: 8px solid darkslateblue;
+    padding: 10px;
+    display: grid;
+    gap: 4px;
+}
+/* Compartilahndo o mesmo estilo para alguns elementos sem poluir meu código */
+.ex1 div,
+.ex2 div,
+.ex3 div,
+.ex4 div,
+.ex5 div,
+.ex6 div,
+.ex7 div,
+.ex8 div{
+    background-color: lightslategrey;
+    color: darkslateblue;
+    border: 4px solid navy;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+
+
+/* Passando valores mistos para o grid-template-columns */
+.ex1{
+     grid-template-columns: 60px 120px auto;
+}
+
+.ex2{
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+/* Utilizando a função Repeat() no Grid-Template-Columns */
+.ex3{
+    grid-template-columns: repeat(3, 1fr);
+    /* Temos aqui a quantidade de vezes que eu quero que se repita, e a unidade de medida */
+}
+
+/* Utilizando a função minmax() o grid-template-columns */
+.ex4{
+    grid-template-columns: minmax(200px, auto) 150px 100px;
+}
+
+
+/* Utilizando a propriedade Grid-template-rows */
+.ex5{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(3, 100px) ;
+
+}
+
+
+/* Utilizando a propriedade column-gap */
+.ex6{
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 60px);
+    gap: 0px;
+    column-gap: 30px;
+}
+
+
+/* Utilizando a propriedade row-gap */
+.ex7{
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 0;
+    row-gap: 60px;
+}
+
+/* Utilizando a propriedade gap */
+
+.ex8{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 50px;
+    /* Ou seja, entre as colunas e linhas 
+        funciona quase que como uma abreviação de row-gap e column-gap */
+
+}
+
