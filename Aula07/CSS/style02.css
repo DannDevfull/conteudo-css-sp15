@@ -1,0 +1,72 @@
+body{
+    background-color: lightyellow;
+    color: darkred;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+/* Estilos para contâineres e Itens */
+.ex1,
+.ex2,
+.ex3,
+.ex4,
+.ex5{
+    background-color: ghostwhite;
+    border:8px solid tan;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 48px);
+}
+
+.ex1 div,
+.ex2 div,
+.ex3 div,
+.ex4 div,
+.ex5 div{
+    background-color: darkred;
+    color: cornsilk;
+    border: 4px solid tan;
+    text-align: center;
+    align-content: center;
+}
+
+/* Utilizando as propriedade grid-colunm start e grid-colunm-end  */
+#ex1-item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Utilizando a propriedade Grid-column */
+
+#ex2-item1{
+    grid-column: 1/ span 2;
+    /* A leitura se dá da seguinte maneira:
+     meu item 1 vai abranger até o item 2 */
+     /* A barra é para separar os valores, e o span diz respeito a sua abrangência (até o item 2) */
+}
+
+
+/* Utilizando as propriedades Grid-row-start e grid-row-end */
+
+#ex3-item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* Utilizando a propriedade Grid-row */
+#ex4-item1{
+
+    grid-row: 1 / span 2;
+    /* Lemos: começa na linha 1 e vai abranger minha linha 2 */
+}
+
+/* Utilizando as propriedades grid-column e Grid-row */
+
+#ex5-item1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
